@@ -19,24 +19,7 @@ main {
     background: #d8cba7;
 }
 
-a {
-    text-decoration: none
-}
 
-
-
-.h1 {
-    text-decoration: overline;
-    text-align: center;
-}
-
-
-
-.t3 {
-    box-shadow: black;
-    font-weight: bold;
-    font-style: italic;
-}
 
 /* body */
 .video {

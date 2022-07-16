@@ -1,0 +1,22 @@
+{
+  "name": "2da-entraga-final-deco",
+  "version": "1.0.0",
+  "description": "Agregando SASS I",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --include-path sass ./sass/index.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lopezla7/2da-entrega-final-Lucas-Lopez.git"
+  },
+  "author": "Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lopezla7/2da-entrega-final-Lucas-Lopez/issues"
+  },
+  "homepage": "https://github.com/Lopezla7/2da-entrega-final-Lucas-Lopez#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

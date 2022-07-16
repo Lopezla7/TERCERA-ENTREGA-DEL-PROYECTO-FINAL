@@ -1,0 +1,49 @@
+/* Contacto */
+
+.cuadro {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.788)
+}
+
+.cuadro__enlace {
+    flex-direction: column;
+    border-radius: 10px;
+    display: flex;
+    width: 50%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 55vh;
+    background: rgba(202, 181, 135, 0.952);
+    line-height: 2.6;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.342);
+
+    &-t3 {
+        box-shadow: black;
+        font-weight: bold;
+        font-style: italic;
+
+    }
+
+    input {
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    select {
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+    button {
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+}
+
+
+
+
+

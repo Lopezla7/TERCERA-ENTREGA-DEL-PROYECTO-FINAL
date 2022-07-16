@@ -1,0 +1,114 @@
+@import 'global';
+@import 'contacto';
+@import 'video';
+
+
+
+
+
+/* QUERYS */
+
+@media (max-width: 800px) {
+
+
+    .video{
+        box-sizing: border-box;
+    
+        &__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            width: auto;
+            align-items: center;
+        }
+    }
+    
+        // 
+    
+          
+        .cuadro__enlace {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .cuadro__enlace {
+            width: 80%;
+        }
+    
+            .video {
+            width: auto;
+            box-sizing: border-box;
+        }
+    }
+    
+    @media (max-width: 492px) {
+        .h1 {
+            display: none;
+        }
+    
+        .video {
+            width: auto;
+            box-sizing: border-box;
+    
+            &__grid{
+    
+                &--video {
+                     display: none;
+                }
+            }
+        }
+    
+        .cuadro {
+            width: auto;
+    
+            &__enlace {
+                width: 97%;
+                margin-left: auto;
+                margin-right: auto;
+    
+                input {
+                    padding: 0 0 0 30px;
+    
+                }
+            }
+        }
+        
+    
+        .container1 {
+            height: auto;
+            align-items: center;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 1fr;
+            
+                        
+            &__box {
+                height: auto;
+            }
+        }
+      
+        .contenedor {
+            display: none;
+        }
+    
+        footer {
+            display: none;
+    
+        }
+    
+        .video__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    
+    
+    }
+    
+    @media (max-width:525px),
+    (orientation: landscape) {
+        .cuadro {
+            bottom: 20px;
+        }
+    }
