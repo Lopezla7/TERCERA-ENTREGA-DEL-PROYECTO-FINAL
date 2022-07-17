@@ -57,34 +57,23 @@
     
     </section>
     <div class="cuadro">
-        <div class="cuadro__enlace">
-            <form class="cuadro__enlace-t3">
-                <label for="nombre">Ingrese su nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="nombre..." />
-                <div><label for="barrio">Ingrese su Barrio:</label>
-                    <select name="barrio" id="barrio">
-                        <option value="Caba">Caba</option>
-                        <option value="Zona zur">Zona sur</option>
-                        <option value="Zona oeste">Zona oeste</option>
-                        <option value="zona norte">Zona norte</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="correo">Ingrese email</label>
-                    <input type="email" id="correo" name="correo" placeholder="email..."/>
-                </div>
-                <div>
-                    <label for="telefono">Ingrese su telefono</label>
-                    <input type="telefono" id="telefono" name="telefono" placeholder="telefono..."/>
-                </div>
-                <div>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpiar</button>
-                </div>
+        <form class="cuadro__enlace">
+            <label  for="nombre">Ingrese su nombre</label>
+            <input class="cuadro__enlace--1" type="text" id="nombre" name="nombre" placeholder="nombre..." />
+            <label  for="barrio">Ingrese su Barrio:</label>
 
-            </form>
-
-        </div>
+            <select class="cuadro__enlace--1" name="barrio" id="barrio">
+                <option value="Caba">Caba</option>
+                <option value="Zona zur">Zona sur</option>
+                <option value="Zona oeste">Zona oeste</option>
+                <option value="zona norte">Zona norte</option>
+            </select>
+            
+            <label  for="telefono">Ingrese su telefono</label>
+            <input class="cuadro__enlace--1" type="telefono" id="telefono" name="telefono" placeholder="telefono...">
+            <button class="cuadro__enlace--1" type="submit">Enviar</button>
+            <button class="cuadro__enlace--1" type="reset">Limpiar</button>
+        </form>
     </div>
 </main>
     <footer class="footer">

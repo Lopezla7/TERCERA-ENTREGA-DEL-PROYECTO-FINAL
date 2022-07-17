@@ -1,9 +1,53 @@
+@import 'variables';
 @import 'global';
 @import 'contacto';
 @import 'video';
+@import 'info';
 
 
+/* CONTAINER1 */
 
+.container1 {
+    border-radius: 10px;
+    display: grid;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    grid-template-columns: repeat(3, 1fr);
+    background: rgba(255, 255, 255, 0.788);
+    font-weight: bold;
+    font-style: italic;
+    
+    &__box {
+        background: #d8cba7;
+        border-radius: 10px;
+        overflow: hidden;
+        height: auto;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+        transition: $transition;
+
+        &:hover {
+            transform: $transform;
+        }
+
+        >img {
+            width: auto;
+            height: calc(100% - 10vh);
+            object-fit: cover;
+            align-items: center;
+
+        }
+
+        >span {
+            font-size: 3.8vh;
+            display: block;
+            text-align: center;
+            height: 10vh;
+            line-height: 2.6;
+        }
+    }
+}
 
 
 /* QUERYS */
@@ -11,9 +55,9 @@
 @media (max-width: 800px) {
 
 
-    .video{
+    .video {
         box-sizing: border-box;
-    
+
         &__grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -21,94 +65,114 @@
             align-items: center;
         }
     }
-    
-        // 
-    
-          
-        .cuadro__enlace {
-            width: 80%;
+
+    // 
+
+
+    .cuadro__enlace {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+    .cuadro2__enlace {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .cuadro__enlace {
+        width: 80%;
+    }
+
+
+    .cuadro2__enlace {
+        width: 80%;
+    }
+
+    .video {
+        width: auto;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 492px) {
+    .h1 {
+        display: none;
+    }
+
+    .video {
+        width: auto;
+        box-sizing: border-box;
+
+        &__grid {
+
+            &--video {
+                display: none;
+            }
+        }
+    }
+
+    .cuadro {
+        width: auto;
+
+        &__enlace {
+            width: 97%;
+            margin-left: auto;
+            margin-right: auto;
+
+            
+        }
+    }
+
+    .cuadro2{
+        width: auto;
+
+        &__enlace {
+            width: 97%;
             margin-left: auto;
             margin-right: auto;
         }
     }
-    
-    @media (max-width: 600px) {
-        .cuadro__enlace {
-            width: 80%;
-        }
-    
-            .video {
-            width: auto;
-            box-sizing: border-box;
-        }
-    }
-    
-    @media (max-width: 492px) {
-        .h1 {
-            display: none;
-        }
-    
-        .video {
-            width: auto;
-            box-sizing: border-box;
-    
-            &__grid{
-    
-                &--video {
-                     display: none;
-                }
-            }
-        }
-    
-        .cuadro {
-            width: auto;
-    
-            &__enlace {
-                width: 97%;
-                margin-left: auto;
-                margin-right: auto;
-    
-                input {
-                    padding: 0 0 0 30px;
-    
-                }
-            }
-        }
-        
-    
-        .container1 {
+
+    .container1 {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+        &__box {
             height: auto;
-            align-items: center;
-            justify-content: center;
-            display: grid;
-            grid-template-columns: 1fr;
-            
-                        
-            &__box {
-                height: auto;
-            }
-        }
-      
-        .contenedor {
-            display: none;
-        }
-    
-        footer {
-            display: none;
-    
-        }
-    
-        .video__grid {
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-    
-    
-    }
-    
-    @media (max-width:525px),
-    (orientation: landscape) {
-        .cuadro {
-            bottom: 20px;
         }
     }
+
+    .contenedor {
+        display: none;
+    }
+
+    footer {
+        display: none;
+
+    }
+
+    .video__grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+@media (max-width:525px),
+(orientation: landscape) {
+    .cuadro {
+        bottom: 20px;
+    }
+}

@@ -1,49 +1,38 @@
 /* Contacto */
 
-.cuadro {
+@mixin contacto ($background) {
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.788)
+    margin-bottom: 20px;
+    background: $background;
+    height: 55vh;
 }
 
-.cuadro__enlace {
+@mixin contacto2 ($width, $border-radius, $background, $boxshadow, $alineado) {
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: $border-radius;
     display: flex;
-    width: 50%;
-    padding: 4% 2%;
+    width: $width;
+    padding: 0 0;
     box-sizing: border-box;
-    height: 55vh;
-    background: rgba(202, 181, 135, 0.952);
+    background: $background;
     line-height: 2.6;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.342);
-
-    &-t3 {
-        box-shadow: black;
-        font-weight: bold;
-        font-style: italic;
-
-    }
-
-    input {
-        border-radius: 8px;
-        box-sizing: border-box;
-    }
-
-    select {
-        border-radius: 8px;
-        box-sizing: border-box;
-    }
-
-    button {
-        border-radius: 8px;
-        box-sizing: border-box;
-    }
+    box-shadow: $boxshadow;
+    align-items: $alineado;
 }
 
+.cuadro {
+    @include contacto(rgba(255, 255, 255, 0.788));
 
+    &__enlace {
+        @include contacto2 (50%, 10px, rgba(202, 181, 135, 0.952), 0 20px 30px rgba(0, 0, 0, 0.342), center);
 
-
-
+        &--1 {
+            width: 45% ;
+            border-radius: 8px ;
+           
+        }
+    }
+}
