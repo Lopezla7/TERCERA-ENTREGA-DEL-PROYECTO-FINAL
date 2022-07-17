@@ -97,11 +97,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center; }
-    .video__grid--presentacion h2 {
+    .video__grid--presentacion h3 {
       color: rgba(0, 0, 0, 0.342);
       font-size: 50px;
       margin-bottom: 20px; }
-    .video__grid--presentacion h3 {
+    .video__grid--presentacion h4 {
       margin-bottom: 40px; }
     .video__grid--video video {
       width: auto;
