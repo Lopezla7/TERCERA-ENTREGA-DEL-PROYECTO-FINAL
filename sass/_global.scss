@@ -30,9 +30,9 @@ h1 {
     text-decoration: overline;
     transition: color 0.3s;
 
-                &:hover {
-                    color: #c6ae389f;
-                }
+    &:hover {
+        color: #c6ae389f;
+    }
 }
 
 
@@ -76,20 +76,37 @@ h1 {
             display: flex;
             justify-content: space-evenly;
 
-            a {text-decoration: none;
-                color: #0f0e13;
-                font-size: 30px;
-                transition: color 0.3s;
+            // a {
+            //     text-decoration: none;
+            //     color: #0f0e13;
+            //     font-size: 30px;
+            //     transition: color 0.3s;
 
-                &:hover {
-                    color: #b9aa63;
-                }
-            }
+            //     &:hover {
+            //         color: #b9aa63;
+            //     }
+            // }
         }
     }
 
 
 }
 
+$redessociales: (
+    instagram: #c92dBf,
+    whatsapp: rgb(8, 200, 85)
+);
 
-
+@each $nombre ,
+$color in $redessociales {
+    .link-#{$nombre} {
+        color: $color;
+        text-decoration: none;
+        font-size: 30px;
+        transition: color 0.3s;
+        
+        &:hover {
+            color: #b9aa63;
+        }
+    }
+}

@@ -46,13 +46,22 @@ h1 {
       margin-top: 20px;
       display: flex;
       justify-content: space-evenly; }
-      .footer__redes-rrss a {
-        text-decoration: none;
-        color: #0f0e13;
-        font-size: 30px;
-        transition: color 0.3s; }
-        .footer__redes-rrss a:hover {
-          color: #b9aa63; }
+
+.link-instagram {
+  color: #c92dBf;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s; }
+  .link-instagram:hover {
+    color: #b9aa63; }
+
+.link-whatsapp {
+  color: #08c855;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.3s; }
+  .link-whatsapp:hover {
+    color: #b9aa63; }
 
 /* Contacto */
 .cuadro {
