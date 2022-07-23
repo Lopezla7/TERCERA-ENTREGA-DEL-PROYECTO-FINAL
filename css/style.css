@@ -111,7 +111,7 @@ h1 {
 /*  Info  */
 .cuadro2 {
   margin-top: 20px;
-  background: rgba(255, 255, 255, 0.788); }
+  background: rgba(255, 255, 255, 0.788) ro2; }
   .cuadro2__enlace {
     flex-direction: column;
     border-radius: 10px;

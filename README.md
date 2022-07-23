@@ -1,2 +1,0 @@
-# SASS II + SEO
-
